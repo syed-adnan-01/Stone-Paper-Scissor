@@ -45,7 +45,7 @@ rock-paper-scissors/
 1. Clone the repository
 
 ```
-git clone https://github.com/your-username/rock-paper-scissors.git
+[git clone https://github.com/your-username/rock-paper-scissors.git](https://github.com/syed-adnan-01/Stone-Paper-Scissor.git)
 ```
 
 2. Open the project folder
