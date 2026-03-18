@@ -24,6 +24,22 @@ h1 {
   cursor: pointer;
   background-color: #081b31;
 }
+/* Animation for choice selection */
+.choice.animate {
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 img {
   height: 150px;
@@ -65,4 +81,25 @@ img {
   display: inline;
   padding: 1rem;
   border-radius: 1rem;
+  transition: background-color 0.3s;
+}
+
+#msg.animate {
+  animation: fadeMsg 0.5s ease;
+}
+
+@keyframes fadeMsg {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 }

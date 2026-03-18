@@ -16,6 +16,8 @@ const genCompChoice = () => {
 const drawGame = () => {
     msg.innerText = "Game was Draw. Play again.";
     msg.style.backgroundColor = "#081b31";
+    msg.classList.add("animate");
+    setTimeout(() => msg.classList.remove("animate"), 500);
 };
 
 const showWinner = (userWin, userChoice, compChoice) => {
@@ -30,6 +32,8 @@ const showWinner = (userWin, userChoice, compChoice) => {
     msg.innerText = `You lose! ${compChoice} beats your ${userChoice}`;
     msg.style.backgroundColor = "red";
   }
+  msg.classList.add("animate");
+  setTimeout(() => msg.classList.remove("animate"), 500);
 };
 
 const playGame = (userChoice) => {
@@ -52,6 +56,9 @@ const playGame = (userChoice) => {
 choice.forEach((choice) => {
   choice.addEventListener("click", () => {
     const userChoice = choice.getAttribute("id");
+    // Animate the selected choice
+    choice.classList.add("animate");
+    setTimeout(() => choice.classList.remove("animate"), 300);
     playGame(userChoice);
   });
 });
